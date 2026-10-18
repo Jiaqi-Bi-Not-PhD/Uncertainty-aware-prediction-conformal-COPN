@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uncertainty-aware-prediction-conformal-copn"
+version = "0.1.0"
+description = "Manuscript-scoped C-OPN probability models, conformal prediction, information deficit and statistical analyses"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26", "pandas>=2.1", "scipy>=1.11", "scikit-learn>=1.4",
+  "openpyxl>=3.1", "pyarrow>=14", "threadpoolctl>=3.1",
+]
+
+[project.optional-dependencies]
+catboost = ["catboost>=1.2"]
+figures = ["matplotlib>=3.8", "reportlab>=4", "Pillow>=10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

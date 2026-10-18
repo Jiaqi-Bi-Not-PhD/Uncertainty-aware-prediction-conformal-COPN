@@ -1,0 +1,24 @@
+# This repository contains scientific source code and documentation only.
+*
+!*/
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/pyproject.toml
+!/src/**/*.py
+!/scripts/*.py
+!/figures/*.py
+!/tables/*.py
+!/supplements/*.py
+# Deny generated folders even when a file uses a source-code extension.
+**/__pycache__/
+**/.venv/
+**/.ipynb_checkpoints/
+**/data/
+**/results/
+**/outputs/
+**/private/
+**/artifacts/
+**/build/
+**/dist/
+*.egg-info/

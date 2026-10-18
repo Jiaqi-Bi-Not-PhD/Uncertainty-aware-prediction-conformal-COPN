@@ -1,0 +1,1 @@
+"""Manuscript-scoped scientific implementation."""
